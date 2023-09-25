@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Roboto&display=swap');
+.menu1  {
+height: 800px;
+width: auto;
+background-color:bisque;
+}
+
+.menu2 {
+    height: 800px;
+    width: auto;
+    background-color: aqua;
+}
+
+.link-secondary {
+    text-decoration: none;
+    margin-right: 0rem;
+  }
+.link-secondary-2 {
+    text-decoration: none;
+    margin-right: 2rem;
+}
+.navbar-custom{
+  background-color: #004e9a;
+  transition: border-radius 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    /*border-radius: 0;*/
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-gap: 20px;              /* ajuste o espaçamento entre os cards conforme necessário */
+    max-width: 1200px;           /* Opcional: defina uma largura máxima para o container */
+    margin: 0 auto;              /* Opcional: centralize o container horizontalmente */
+  }
+  
+  .card {
+    margin-top: 20px;
+    background-color: #ffffff;                               /* fundo card */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);             /* sombra */
+  }
+  
+  /*  lay responsivo */
+  @media (max-width: 992px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);                    /* 3 colunas para telas menores */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;                                /* 1 coluna pra mobile */
+    }
+  }
+  
+  /* estilos para a marca (logo) */
+  .navbar-brand {
+    padding: 0;                                                  /* remover o espaço interno padrão */
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;                                            /* altura máxima da imagem do logo */
+    margin-right: 10px;                                          /* espaçamento à direita da imagem do logo */
+  }
+  
+  navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #ffffff
+  }
+/* stack overflow */
+ /* Estilo dos botões */
+.navbar-custom .btn {
+  background-color: #ffffff; 
+  font-weight: 500; 
+  color: #000000; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-custom .btn:hover {
+  background-color: #004e9a; 
+  color: #ffffff; 
+
+  transform: scale(1.05); 
+}
+
+
+.navbar-custom .btn:focus {
+  background-color: #004e9a; 
+  color: #ffffff; 
+ 
+  outline: none; 
+}
+
+  
+
+
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+
+
+
+
+  
+  

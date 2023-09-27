@@ -132,14 +132,35 @@ background-color:bisque;
   color: #ffffff;
   background-color: #164E63;
   margin-top: 2%;
-  
 }
 
 .card-qr{
   margin-top: 3%;
 }
 
+.btn-qr:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #164E63;
+  font-weight: 500;
+}
+
 .modal-qr{
   margin-top: 3%;
 }
 
+.btn-imp{
+  color: #ffffff;
+  background-color: #164E63;
+}
+
+.btn-imp:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #164E63;
+  font-weight: 500;
+}
+
+.nv-color{
+  background-color: #164E63;
+}

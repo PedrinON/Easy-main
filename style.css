@@ -97,7 +97,6 @@ background-color:bisque;
 .navbar-custom .btn:focus {
   background-color: #004e9a; 
   color: #ffffff; 
- 
   outline: none; 
 }
 
@@ -117,3 +116,30 @@ background-color:bisque;
   margin-top: 5%;
   text-align: center;
 }
+
+.form-select{
+  height: 30%;
+  margin-top: 2%;
+}
+
+.form-control{
+  margin-top: 2%;
+
+}
+
+.btn-qr{
+  align-items: center;
+  color: #ffffff;
+  background-color: #164E63;
+  margin-top: 2%;
+  
+}
+
+.card-qr{
+  margin-top: 3%;
+}
+
+.modal-qr{
+  margin-top: 3%;
+}
+

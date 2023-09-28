@@ -89,32 +89,68 @@
     </div>
 <!-- FIM DA SEÇÃO 2-->
 
-<!-- LOGICA DO CHART-->
-    <div class="chart-container">
-        <div class="chart">
-          <canvas id="myPieChart"></canvas>
-          <script>
-                            // pra puxar o canvas
-            var ctx = document.getElementById("myPieChart").getContext("2d");
-        
-                        // dados do grafico
-            var data = {
-            labels: ["Categoria 1", "Categoria 2", "Categoria 3"],
-            datasets: [
-                {
-                data: [30, 40, 30],                 // valor dos lados setores
-                backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],             //as cores
-                },
-            ],
-            };
-        
-                            // criação do grafico
-            var myPieChart = new Chart(ctx, {
-            type: "pie",
-            data: data,
-            });
-        </script>
-    </div>
-<!-- FIM DA LOGICA DO CHART-->
+<!-- INICIO DA SEÇÃO 3-->
+<br><br>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Carro</th>
+      <th>Placa</th>
+      <th>Categoria</th>
+      <th>Código ID</th>
+      <th>Ano</th>
+      <th>Status</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fiat Argo</td>
+      <td>ABC-1234</td>
+      <td>Hatch</td>
+      <td>1234567890</td>
+      <td>2023</td>
+      
+      <td>
+        <select class="form-control">
+          <option value="1">Disponível</option>
+          <option value="2">Manutencao</option>
+          <option value="3">Reserva</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Volkswagen Gol</td>
+      <td>DEF-5678</td>
+      <td>Sedan</td>
+      <td>9876543210</td>
+      <td>2022</td>
+      
+      <td>
+        <select class="form-control">
+          <option value="1">Disponível</option>
+          <option value="2">Manutencao</option>
+          <option value="3">Reserva</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Chevrolet Onix</td>
+      <td>GHI-9012</td>
+      <td>SUV</td>
+      <td>6543210987</td>
+      <td>2021</td>
+      
+      <td>
+        <select class="form-control">
+          <option value="1">Disponível</option>
+          <option value="2">Manutencao</option>
+          <option value="3">Reserva</option>
+        </select>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  </body>
+
+</body>

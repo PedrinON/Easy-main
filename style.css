@@ -93,7 +93,6 @@ background-color:bisque;
   transform: scale(1.05); 
 }
 
-
 .navbar-custom .btn:focus {
   background-color: #004e9a; 
   color: #ffffff; 
@@ -106,25 +105,9 @@ background-color:bisque;
   margin-top: 10%;
 }
 
-.chart {
-  width: 75vh;
-  height: 50vh;
-  margin-left: 28%;
-}
-
-.chart {
-  margin-top: 5%;
-  text-align: center;
-}
-
 .form-select{
   height: 30%;
   margin-top: 2%;
-}
-
-.form-control{
-  margin-top: 2%;
-
 }
 
 .btn-qr{
@@ -164,3 +147,17 @@ background-color:bisque;
 .nv-color{
   background-color: #164E63;
 }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+

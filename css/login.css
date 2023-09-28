@@ -16,7 +16,7 @@ body{
 }
 .login-container h1 {
     text-align: center;
-    color: #333;
+    color: #164E63;
     margin-bottom: 30px;
 }
 .login-container label {
@@ -31,21 +31,21 @@ body{
     border: 1px solid #ddd;
     border-radius: 3px;
     outline: none;
+    border-color: #164E63;
 }
-.login-container button {
+.btn-entrar {
     width: 100%;
     padding: 10px;
     background-color: #337ab7;
     color: #fff;
-    border: none;
-    
 }
-button:hover{
-    background-color: #004e9a;
-    color: #fff;
-    transition: all 0.5s ease-in;
-    transform: scale(0.9);
+.btn-entrar:hover{
+    background-color: #DDE2EE;
+    color: #000000;
+    font-weight: 500;
+    border-color:#164E63;
 }
+
 navbar-nav .nav-link {
     color: #ffffff;
     font-weight: 500;

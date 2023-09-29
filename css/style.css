@@ -107,14 +107,14 @@ background-color:bisque;
 
 .form-select{
   height: 30%;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .btn-qr{
   align-items: center;
   color: #ffffff;
   background-color: #164E63;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .card-qr{
@@ -135,6 +135,7 @@ background-color:bisque;
 .btn-imp{
   color: #ffffff;
   background-color: #164E63;
+
 }
 
 .btn-imp:hover{

@@ -149,6 +149,19 @@ background-color:bisque;
   background-color: #164E63;
 }
 
+.custom-progress {
+  height: 25px; 
+  margin-bottom: 15px;
+  
+}
+
+.custom-label {
+  font-weight: lighter;
+  margin-right: 10px;
+}
+
+
+
   
 
 

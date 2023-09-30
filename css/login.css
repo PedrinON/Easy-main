@@ -99,10 +99,10 @@ navbar-nav .nav-link {
     }
     /* estilos para a marca (logo) */
     .navbar-brand {
-        padding: 0;                                                  /* remover o espaço interno padrão */
+        padding: 0;                                                
     }
 
 .navbar-brand img {
-    max-height: 40px;                                            /* altura máxima da imagem do logo */
-    margin-right: 10px;                                          /* espaçamento à direita da imagem do logo */
+    max-height: 40px;                                            
+    margin-right: 10px;                                         
 }

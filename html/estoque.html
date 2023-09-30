@@ -1,156 +1,205 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Easy Carros</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-<!-- SEÇÃO 1-->
-    <nav class="navbar navbar-expand-md bg-black navbar-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <h1 class="m-0"><img class="d-block" src="../imagens/logo.png" alt="Logo Easycarros"></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item d-flex">
-              <a class="nav-link active btn navbar-custom border-0 me-2" aria-current="page" href="../html/index.html">Página Inicial</a>
-            </li>
-          </ul>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Easy Carros</title>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+  <!-- SEÇÃO 1-->
+  <nav class="navbar navbar-expand-md bg-blue navbar-custom" style="background-color: #0a3342;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1 class="m-0"><img class="d-block" src="../imagens/logo.png" alt="Logo Easycarros"></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item d-flex">
+            <a class="nav-link active btn navbar-custom border-0 me-2" aria-current="page" href="../html/index.html">Página Inicial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIM DA SEÇÃO 1-->
+
+  <!-- SEÇÃO 2-->
+      <div class="d-flex justify-content-center">
+          <div class="btn-group me-2">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categoria
+              </button>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Hatch</a></li>
+                  <li><a class="dropdown-item" href="#">Sedan</a></li>
+                  <li><a class="dropdown-item" href="#">SUV</a></li>
+              </ul>
+          </div>
+      
+          <div class="btn-group me-2">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Modelo
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Fiat Argo</a></li>
+                  <li><a class="dropdown-item" href="#">Volkswagen Gol</a></li>
+                  <li><a class="dropdown-item" href="#">Chevrolet Onix</a></li>
+              </ul>
+          </div>
+      
+          <div class="btn-group me-2">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Placa
+              </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="#">ABC-1234</a></li>
+                  <li><a class="dropdown-item" href="#">DEF-5678</a></li>
+                  <li><a class="dropdown-item" href="#">GHI-9012</a></li>
+              </ul>
+          </div>
+
+          <div class="btn-group me-2">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Status
+              </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="#">Disponível</a></li>
+                  <li><a class="dropdown-item" href="#">Manutencao</a></li>
+                  <li><a class="dropdown-item" href="#">Reserva</a></li>
+              </ul>
+          </div>
+
+          <form action="/em-construcao-volte-outra-hora.html" method="GET" class="btn-group ms-2 align-items-center">
+            <div class="input-group">
+                <input type="text" class="form-control" style="background-color: transparent;" placeholder="Digite sua pesquisa" name="q">
+                <div class="input-group-append">
+                    <input type="submit" class="btn btn-primary" value="Pesquisar">
+                </div>
+            </div>
+            <label class="btn btn-warning border" style="margin-left: 15px; width: 40px; height: 40px;">
+              <i class="bi bi-file-earmark-pdf"></i>
+              <input type="file" style="display: none;">
+          </label>
+          
+          
+        </form>
+        
+        
+        
+      </div>
+  <!-- FIM DA SEÇÃO 2-->
+
+  <!-- INICIO DA SEÇÃO 3-->
+  <br><br>
+  <table class="table table-bordered border-secondary ">
+    <thead class="text-white" style="background-color: #0a3342;">
+
+      <tr>
+        <th>Veiculo</th>
+        <th>Placa</th>
+        <th>Categoria</th>
+        <th>Código ID</th>
+        <th>Ano</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fiat Argo</td>
+        <td>ABC-1234</td>
+        <td>Hatch</td>
+        <td>1234567890</td>
+        <td><a href="downloadficticio.pdf" download>2023</a></td>
+        <td>
+          <select class="form-control">
+            <option value="1">Disponível</option>
+            <option value="2">Manutencao</option>
+            <option value="3">Reserva</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Volkswagen Gol</td>
+        <td>DEF-5678</td>
+        <td>Sedan</td>
+        <td>9876543210</td>
+        <td><a href="downloadficticio.pdf.pdf" download>2022</a></td>
+        <td>
+          <select class="form-control">
+            <option value="1">Disponível</option>
+            <option value="2">Manutencao</option>
+            <option value="3">Reserva</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Chevrolet Onix</td>
+        <td>GHI-9012</td>
+        <td>SUV</td>
+        <td>6543210987</td>
+        <td><a href="downloadficticio.pdf" download>2021</a></td>
+        <td>
+          <select class="form-control">
+            <option value="1">Disponível</option>
+            <option value="2">Manutencao</option>
+            <option value="3">Reserva</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="col-md-6 informacoes">
+      <br>
+      <h6>Análise de Estoque</h6>
+      <div class="custom-label">Disponível</div>
+      <div class="progress custom-progress">
+        <div class="placeholder"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="marker" style="left: 25%;">25</div>
+      </div>
+      <div class="custom-label">Indisponível</div>
+      <div class="progress custom-progress">
+        <div class="placeholder"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="marker">10</div>
+      </div>
+      <div class="custom-label">Manutencao</div>
+      <div class="progress custom-progress">
+        <div class="placeholder"></div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="marker" style="left: 25%;">31</div>
+      </div>
+      <!-- Coloque as imagens abaixo do conteúdo do gráfico -->
+      <div class="row images">
+        <div class="col-md-4">
+          <img src="./exeg.PNG" alt="Imagem 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./exeg3.PNG" alt="Imagem 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./exeg2.PNG" alt="Imagem 2" class="img-fluid">
         </div>
       </div>
-    </nav>
-<!-- FIM DA SEÇÃO 1-->
-
-<!-- SEÇÃO 2-->
-    <div class="d-flex justify-content-center">
-        <div class="btn-group me-2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categoria
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">X</a></li>
-                <li><a class="dropdown-item" href="#">Y</a></li>
-                <li><a class="dropdown-item" href="#">Z</a></li>
-            </ul>
-        </div>
-    
-        <div class="btn-group me-2">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Modelo
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">X</a></li>
-                <li><a class="dropdown-item" href="#">Y</a></li>
-                <li><a class="dropdown-item" href="#">Z</a></li>
-            </ul>
-        </div>
-    
-        <div class="btn-group me-2">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Placa
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><a class="dropdown-item" href="#">X</a></li>
-                <li><a class="dropdown-item" href="#">Y</a></li>
-                <li><a class="dropdown-item" href="#">Z</a></li>
-            </ul>
-        </div>
-
-        <div class="btn-group me-2">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Status
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><a class="dropdown-item" href="#">X</a></li>
-                <li><a class="dropdown-item" href="#">Y</a></li>
-                <li><a class="dropdown-item" href="#">Z</a></li>
-            </ul>
-        </div>
-
-        <form action="/em-construcao-volte-outra-hora.html" method="GET" class="btn-group ms-2">
-            <input type="text" class="form-control" style="background-color: transparent;" placeholder="Digite sua pesquisa" name="q">
-            <input type="submit" class="btn btn-primary" value="Pesquisar">
-        </form>
     </div>
-<!-- FIM DA SEÇÃO 2-->
+  </div>
 
-<!-- INICIO DA SEÇÃO 3-->
-<br><br>
-<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>Carro</th>
-      <th>Placa</th>
-      <th>Categoria</th>
-      <th>Código ID</th>
-      <th>Ano</th>
-      <th>Status</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Fiat Argo</td>
-      <td>ABC-1234</td>
-      <td>Hatch</td>
-      <td>1234567890</td>
-      <td>2023</td>
-      
-      <td>
-        <select class="form-control">
-          <option value="1">Disponível</option>
-          <option value="2">Manutencao</option>
-          <option value="3">Reserva</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>Volkswagen Gol</td>
-      <td>DEF-5678</td>
-      <td>Sedan</td>
-      <td>9876543210</td>
-      <td>2022</td>
-      
-      <td>
-        <select class="form-control">
-          <option value="1">Disponível</option>
-          <option value="2">Manutencao</option>
-          <option value="3">Reserva</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>Chevrolet Onix</td>
-      <td>GHI-9012</td>
-      <td>SUV</td>
-      <td>6543210987</td>
-      <td>2021</td>
-      
-      <td>
-        <select class="form-control">
-          <option value="1">Disponível</option>
-          <option value="2">Manutencao</option>
-          <option value="3">Reserva</option>
-        </select>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-</body>
+  </body>

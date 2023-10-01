@@ -19,19 +19,33 @@
   <!-- SEÇÃO 1-->
   <nav class="navbar navbar-expand-md bg-blue navbar-custom" style="background-color: #0a3342;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#">
         <h1 class="m-0"><img class="d-block" src="../imagens/logo.png" alt="Logo Easycarros"></h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item d-flex">
+            <li class="nav-item d-flex">
             <a class="nav-link active btn navbar-custom border-0 me-2" aria-current="page" href="../html/index.html">Página Inicial</a>
-          </li>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link active btn navbar-custom border-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Serviços
+            </a>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/qrcode.html">Gerar QR Code</a></li>
+                <li><a class="dropdown-item" href="./estoque.html">Imprimir QR Code</a></li>
+                <li><a class="dropdown-item" href="#">Registrar QR Code</a></li>
+            </ul>
+            </li>
+            </li>
         </ul>
+        
       </div>
     </div>
   </nav>

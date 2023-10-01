@@ -1,0 +1,34 @@
+.vencida {
+    background-color: red;
+}
+
+.vencer-1 {
+    background-color: yellow;
+}
+
+.vencer-2 {
+    background-color: greenyellow;
+}
+
+.table-manut {
+    width: 75%;
+    display: block; /* Necessário para o margin funcionar */
+    margin-left: auto; /* aqui */
+    margin-right: auto; /* e aqui */
+}
+
+.space {
+    width: 10px;
+}
+
+.vencida-icon {
+    color: red;
+}
+
+.vencer-1-icon {
+    color: yellow;
+}
+
+.vencer-2-icon {
+    color: greenyellow;
+}

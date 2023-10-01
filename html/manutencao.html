@@ -4,10 +4,260 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/manuntencao.css">
-
-        <title>Easy Carros</title>
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Easy Carros - Manutenção Preventiva</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
     <body>
+
+        <!-- CABEÇALHO -->
+
+        <nav class="navbar navbar-expand-md bg-blue navbar-custom" style="background-color: #0a3342;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <h1 class="m-0"><img class="d-block" src="../imagens/logo.png" alt="Logo Easycarros"></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item d-flex">
+                    <a class="nav-link active btn navbar-custom border-0 me-2" aria-current="page" href="../html/index.html">Página Inicial</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active btn navbar-custom border-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Serviços
+                    </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../html/qrcode.html">Gerar QR Code</a></li>
+                        <li><a class="dropdown-item" href="./estoque.html">Controle de Estoque</a></li>
+                        <li><a class="dropdown-item" href="./manutencao.html">Manutenção Preventiva</a></li>
+                    </ul>
+                    </li>
+                    </li>
+                </ul>
+                
+            </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-1" type="search" placeholder="Buscar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-light border-0 rounded-1" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>    
+
+    <!-- FILTROS -->
+
+        <div class="d-flex justify-content-center">
+            <div class="btn-group me-2">
+                <button class="btn " aria-expanded="false">
+                    Período
+                </button>
+                <input id="date" type="date" /> -
+                <input id="date" type="date" />
+            </div>
+
+            <div class="btn-group me-2">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Status Manutenção
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="#">Vencidas</a></li>
+                    <li><a class="dropdown-item" href="#">À vencer</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group me-2">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Tipo Manutenção
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="#">Óleo</a></li>
+                    <li><a class="dropdown-item" href="#">Filtro</a></li>
+                    <li><a class="dropdown-item" href="#">Troca de Pneus</a></li>
+                    <li><a class="dropdown-item" href="#">Revisão</a></li>
+                </ul>
+            </div>
+
+            <form action="" method="GET" class="btn-group ms-2 align-items-center">
+                <div class="input-group">
+                    <input type="text" class="form-control" style="background-color: transparent;" placeholder="Pesquisar ID do veículo..." name="q">
+                    <div class="input-group-append">
+                        <input type="submit" class="btn btn-info" value="Pesquisar">
+                    </div>
+                </div>
+                <label class="btn border" style="margin-left: 15px; width: 40px; height: 40px;">
+                    <i class="bi bi-download"></i>
+                    <input type="file" style="display: none;">
+                </label>
+            </form>
+        </div>
+
+    <!-- TABELA DE VEÍCULOS -->
+
+        <br><br>
+
+        <div class="table-manut">
+
+            <table>
+                <tr>
+                    <td>
+                        <i class="bi bi-circle-fill vencida-icon"></i>
+                    </td>
+                    <td class="space"></td>
+                    <td>Vencida</td>
+                    <td class="space"></td>
+                    <td>
+                        <i class="bi bi-circle-fill vencer-1-icon"></i>
+                    </td>
+                    <td class="space"></td>
+                    <td>Vencimento Próximo</td>
+                    <td class="space"></td>
+                    <td>
+                        <i class="bi bi-circle-fill vencer-2-icon"></i>
+                    </td>
+                    <td class="space"></td>
+                    <td>Vencimento Distante</td>
+                </tr>   
+            </table>
     
+            <br>
+
+            <table class="table table-bordered border-secondary">
+                <thead class="text-white" style="background-color: #0a3342;">
+
+                <tr>
+                    <th>Código ID</th>
+                    <th>Descrição do Veículo</th>
+                    <th>Data de Vencimento</th>
+                    <th>Quilometragem</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="vencer-1">
+                    <td>1234567890</td>
+                    <td>Fiat Argo Drive 1.0 Firefly</td>
+                    <td>27/11/2023</td>
+                    <td>108.956</td>
+                </tr>
+                <tr class="vencer-2">
+                    <td>9876543210</td>
+                    <td>Volkswagen Golf 2.0 TSI GTI</td>
+                    <td>24/02/2024</td>
+                    <td>246.452</td>
+                </tr>
+                <tr class="vencida">
+                    <td>6543210987</td>
+                    <td>Chevrolet Onix 1.0 Turbo</td>
+                    <td>22/07/2023</td>
+                    <td>85.456</td>
+                </tr>
+
+                <tr>
+                    <td>1234567890</td>
+                    <td>Volkswagen T-Cross 1.0 200 TSI Sense</td>
+                    <td>27/11/2023</td>
+                    <td>108.956</td>
+                </tr>
+                <tr>
+                    <td>9876543210</td>
+                    <td>Nissan Versa 1.6 Sense</td>
+                    <td>24/02/2024</td>
+                    <td>246.452</td>
+                </tr>
+                <tr>
+                    <td>6543210987</td>
+                    <td>Toyota Etios 1.5 X Sedan</td>
+                    <td>22/07/2023</td>
+                    <td>85.456</td>
+                </tr>
+                <tr>
+                    <td>1234567890</td>
+                    <td>Hyundai HB20 1.0 Evolution</td>
+                    <td>27/11/2023</td>
+                    <td>108.956</td>
+                </tr>
+                <tr>
+                    <td>9876543210</td>
+                    <td>Toyota Corolla 2.0 XEI</td>
+                    <td>24/02/2024</td>
+                    <td>246.452</td>
+                </tr>
+                <tr>
+                    <td>6543210987</td>
+                    <td>Honda Civic 1.5 Turbo Touring</td>
+                    <td>22/07/2023</td>
+                    <td>85.456</td>
+                </tr>
+                <tr>
+                    <td>1234567890</td>
+                    <td>Honda City 1.5 EX</td>
+                    <td>27/11/2023</td>
+                    <td>108.956</td>
+                </tr>
+                <tr>
+                    <td>9876543210</td>
+                    <td>Honda HR-V 1.8 EXL</td>
+                    <td>24/02/2024</td>
+                    <td>246.452</td>
+                </tr>
+                <tr>
+                    <td>6543210987</td>
+                    <td>Renault Kwid 1.0 SCE Zen</td>
+                    <td>22/07/2023</td>
+                    <td>85.456</td>
+                </tr>
+                <tr>
+                    <td>1234567890</td>
+                    <td>Renault Captur 1.3 TCE Iconic X-Tronic</td>
+                    <td>27/11/2023</td>
+                    <td>108.956</td>
+                </tr>
+                <tr>
+                    <td>9876543210</td>
+                    <td>Ford Ka 1.5 Ti-Vct SE Sedan</td>
+                    <td>24/02/2024</td>
+                    <td>246.452</td>
+                </tr>
+                <tr>
+                    <td>6543210987</td>
+                    <td>Citroen C4 Cactus 1.6</td>
+                    <td>22/07/2023</td>
+                    <td>85.456</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
     </body>
+
+    <!-- RODAPÉ -->
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Challenge BRQ</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Grupo (RAMMP), FIAP</p>
+      </footer>
 </html>
